@@ -1,215 +1,66 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- <html xmlns="http://www.w3.org/1999/xhtml"> -->
+<!doctype html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="fontawesome/css/all.css">
-    <title>Roqqu html VERIFY-EMAIL-ADDRESS email template using imgBox to upload image</title>
+    <title>Roqqu html VERIFY-EMAIL-ADDRESS email template</title>
+  <style type="text/css">
+    @font-face {font-family: titlinggothicfbnor;src: url("fonts/titlinggothicfbnor-black-webfont.woff");}
+    .logoBg{width:721px;height:70px}
+        body{background-color: #F5F8FA;color: black;font-family: titlinggothicfbnob;}
+</style>
+<!-- <style media="only screen and (min-width: 100px)" type="text/css">
 
-
-    
-    <!-- <style type="text/css"> -->
-        <style>
-        @font-face {
-            font-family: titlinggothicfbnor;
-            src: url("fonts/titlinggothicfbnor-black-webfont.woff");
+@media only screen and (min-width: 100px){
+            /* .logoBg{width:721px;height:55px} */
+            /* .logoWhite{z-index:2; width: 93px;height: 23px;top:-30px;padding-left: 25px;} */
+            .verify-email-td{padding-left: 25px;margin: 0px;}
+            .verify-email{padding-top: 25px;font-size: 23px !important;font-weight: bold;margin-block-start: 0em;margin-block-end: 0em;margin-top: 0px;margin-bottom: 0px;}
+            .hi-name{padding-left:25px;margin-top: 15px;font-size:17px !important;}
+            .thank-you{max-width: 280px;line-height: 24px;font-size: 16px;padding-left: 25px;}
+            .setup{max-width:300px;padding-top: 15px;font-size: 16px;line-height: 24px;padding-left: 25px;}
+            .verify-btn{padding-bottom: 5px;padding-top: 15px;padding-left: 25px;}
+            .important{padding-bottom: 50px;line-height: 24px;font-size: 15px;padding-left: 25px;max-width: 290px;}
+            .downloadApp{font-size: 18px;padding-left: 25px;margin-bottom: 15px;}
+            .link-app{padding-left: 25px !important;}
+            .footer-socialMedia{padding-left: 25px;padding-top: 20px;}
+            .footer-message{width: 300px;padding-left: 25px;}
         }
-
-        body{
-            background-color: #F5F8FA;
-            margin-bottom: 60px;
-            margin-top: 10px;
-            color: black;
-            font-family: titlinggothicfbnob;
-        }
-
-        @media screen and (max-width: 576px){
-            .x_logoBg{
-                width:721px;
-                height:55px
-            }
-            .x_logoWhite{
-                z-index:2; 
-                width: 93px;
-                height: 23px;
-                top:-30px;
-                padding-left: 25px;
-            }
-            .verify-email-td{
-                    padding-left: 25px;
-                    margin: 0px;
-            }
-            .verify-email{
-                padding-top: 25px;
-                font-size: 23px !important;
-                font-weight: bold;
-                margin-block-start: 0em;
-                margin-block-end: 0em;
-                margin-top: 0px;
-                margin-bottom: 0px;
-            }
-            .hi-name{
-                padding-left:25px;
-                margin-top: 15px;
-                font-size:17px !important;
-            }
-            .thank-you{
-                max-width: 280px;
-                line-height: 24px;
-                font-size: 16px;
-                padding-left: 25px;
-            }
-
-            .setup{
-                max-width:300px;
-                padding-top: 15px;
-                font-size: 16px;
-                line-height: 24px;
-                padding-left: 25px;
-            }
-
-            .verify-btn{
-                padding-bottom: 5px;
-                padding-top: 15px;
-                padding-left: 25px;
-            }
-            .important{
-                padding-bottom: 50px;
-                line-height: 24px;
-                font-size: 15px;
-                padding-left: 25px;
-                max-width: 290px;
-            }
-            .downloadApp{
-                font-size: 18px;
-                padding-left: 25px;
-                margin-bottom: 15px;
-            }
-            .link-app{
-                padding-left: 25px !important;
-            }
-            .footer-socialMedia{
-                padding-left: 25px;
-                padding-top: 20px;
-            }
-            .footer-message{
-                width: 300px;
-                padding-left: 25px;
-            }
-        }
-
-        @media screen and (min-width: 992px){
-            .x_logoBg{
-                width:721px;
-                height:70px
-            }
-            .x_logoWhite{
-                z-index:2; 
-                width:109px; 
-                height:27px; 
-                top:-30px;
-                padding-left: 55px;
-            } 
-            .verify-email-td{
-                padding-left: 55px;
-                margin: 0px;
-            }
-            .verify-email{
-                padding-top: 20px;
-                font-size: 24px !important;
-                font-weight: bold;
-                margin-block-start: 0px;
-                margin-block-end: 0px;
-                margin-top: 0px;
-                margin-bottom: 0px;
-            }
-            .hi-name{
-                padding-left:55px;
-                margin-top: 15px;
-                font-size:17px !important;
-            }
-            .thank-you{
-                max-width: 580px;
-                line-height: 24px;
-                font-size: 16px;
-                padding-left: 55px;
-            }
-            .setup{
-                max-width:100%;
-                padding-top: 10px;
-                /* padding-bottom: 35px; */
-                font-size: 16px;
-                padding-left: 55px;
-                line-height: 10px;
-            }
-            .verify-btn{
-                padding-bottom: 5px;
-                padding-top: 20px;
-                padding-left: 55px;
-            }
-            .important{
-                padding-bottom: 50px;
-                line-height: 24px;
-                font-size: 15px;
-                padding-left: 55px;
-                max-width: 600px;
-            }
-            .downloadApp{
-                padding-left: 55px;
-                font-size: 18px;
-                margin-bottom: 15px;
-            }
-            .link-app{
-                padding-left: 55px !important;
-            }
-            .footer-social{
-                float: left;
-            }
-            .footer-socialMedia{
-                padding-left: 55px;
-                padding-right: 19px;
-            }
-            .footer-socialMedia-01{
-                max-width: 324px;
-                float: right;
-            }
-            .footer-message{
-                width: 600px !important;
-                padding-left: 55px;
-            }
-        }
-    </style>
+</style>
+<style media="only screen and (min-width: 992px)" type="text/css">@media only screen and (min-width: 992px){
+.logoBg{width:721px;height:70px}
+.logoWhite{z-index:2; width:109px; height:27px; top:-30px;padding-left: 55px;} 
+.verify-email-td{padding-left: 55px;margin: 0px;}
+.verify-email{padding-top: 20px;font-size: 24px !important;font-weight: bold;margin-block-start: 0px;margin-block-end: 0px;margin-top: 0px;margin-bottom: 0px;}
+.hi-name{padding-left:55px;margin-top: 15px;font-size:17px !important;}
+            .thank-you{max-width: 580px;line-height: 24px;font-size: 16px;padding-left: 55px;}
+            .setup{max-width:100%;padding-top: 10px;font-size: 16px;padding-left: 55px;line-height: 10px;}
+            .verify-btn{padding-bottom: 5px;padding-top: 20px;padding-left: 55px;}
+            .important{padding-bottom: 50px;line-height: 24px;font-size: 15px;padding-left: 55px;max-width: 600px;}
+            .downloadApp{padding-left: 55px;font-size: 18px;margin-bottom: 15px;}
+            .footer-social{float: left;}
+            .link-app{padding-left: 55px !important;}
+            .footer-socialMedia-01{max-width: 324px;float: right;}
+            .footer-socialMedia{padding-left: 55px;padding-right: 19px;}
+            .footer-message{width: 600px !important;padding-left: 55px;}
+        }    
+  </style> -->
 </head>
-
-
-    <body>
-        <center style="width: 100%;table-layout:fixed">
-            <table border="0" height="100%" bordercolor="rgba(82, 82, 82, 0.425)" border="1" style="height:100%;
-            margin:0 auto;
-            padding:0;
-            width:100%;
-            background-color:#ffffff;
-            box-shadow: 0px 0px 2px  rgba(82, 82, 82, 0.425);
-            max-width: 720px;
-            border-spacing: 0;
-            font-family: sans-serif;
-            border-radius: 6px;
-            color: black;
-        ">
+<body>
+ <center style="width: 100%;table-layout:fixed">
+            <table border="0" height="100%" bordercolor="rgba(82, 82, 82, 0.425)" style="height:100%;margin:0 auto;padding:0;width:100%;background-color:#ffffff;max-width: 719px;border-spacing: 0;font-family: sans-serif;border-radius: 6px;color: black;">
 
             <tr>
-                <td class="x_logoBg" style="margin-left:0px; padding-left:0px;background-image:url(https://i.ibb.co/7NXrTy7/Frame-1.png);background-repeat: no-repeat;
-                        background-size: cover;">
-                    <img data-imagetype="External" src="https://i.ibb.co/mXH5HPr/Logo-White-2.png" alt="Logo-White-2" class="x_logoWhite"> 
+                <td class="logoBg" style="margin-top:70px; padding-left:0px;">
+                    <img data-imagetype="External" src="https://i.ibb.co/9YD7RGX/fullbackground.jpg" alt="Logo-White-2" class="logoWhite" style="z-index:2; width:100.1%; height:100%; top:-30px;"> 
                 </td>
             </tr>
 
 
             <tr>
-                <td class="verify-email-td">
-                    <p class="verify-email">
+                <td class="verify-email-td" style="padding-left: 50px;margin: 0px;">
+                    <p class="verify-email" style="padding-top: 20px;font-size: 24px !important;font-weight: bold;margin-block-start: 0px;margin-block-end: 0px;margin-top: 0px;margin-bottom: 0px;">
                         Verify your Email Address
                     </p>
                 </td>
@@ -217,14 +68,14 @@
             
             <tr>
                 <td>
-                    <h4 class="hi-name">
+                    <h4 class="hi-name" style="padding-left:50px;margin-top: 15px;font-size:17px !important;">
                         Hi Jaykay,
                     </h4>
-                    <p class="thank-you">
+                    <p class="thank-you" style="max-width: 580px;line-height: 24px;font-size: 16px;padding-left:50px">
                         Thank you for signing up to Roqqu Marketplace; sit back while we relieve you of
                         all your crypto hassles.
                     </p>
-                    <p class="setup">
+                    <p class="setup" style="max-width:100%;padding-top: 10px;font-size: 16px;padding-left: 50px;line-height: 24px;">
                             Click on the button below to verify your email address to complete your setup
                     </p>
                 </td>
@@ -232,14 +83,14 @@
 
                 <tr>
                     <td>
-                        <img src="https://i.ibb.co/RbFNdBS/Btn.png" alt="Btn" class="verify-btn">
+                        <img src="https://i.ibb.co/RbFNdBS/Btn.png" alt="Btn" class="verify-btn" style="padding-bottom: 5px;padding-top: 20px;padding-left: 50px;">
                     </td>
                 </tr>
 
             <tr>
                 <td>
-                    <p class="important">
-                        <span style="color:#2764FF">IMPORTANT:</span> Please do not share this email with anyone. The link can only be used
+                    <p class="important" style="padding-bottom: 50px;line-height: 24px;font-size: 15px;padding-left: 50px;max-width: 600px;">
+                        <span style="color:#2764FF !important">IMPORTANT:</span> Please do not share this email with anyone. The link can only be used
                         once and will expire two hours after this email was sent.
                             <br>
                         If you do not know why you have received this email, please delete it
@@ -250,43 +101,43 @@
         </table>
 
 
-        <table border="0" height="100%" style="height:100%;margin:0 auto;color: black;padding:0;width:100%;max-width: 720px;border-spacing: 0;font-family: sans-serif;">
+        <table border="0" height="100%" style="height:100%;margin:0 auto;color: black;padding:0;width:100%;max-width: 719px;border-spacing: 0;font-family: sans-serif;">
             
             <tr>
                 <td style="padding: 0px">
                     <table width="100%" style="border-spacing: 0px;">
                         <tr style="margin-bottom: 0px">
                             <td>
-                                <h4 class="downloadApp">Download our app</h4>
+                                <h4 class="downloadApp" style="padding-left: 50px;font-size: 18px;margin-bottom: 15px;">Download our app</h4>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <table class="footer-social" style="max-width: 300px;border-spacing: 0;">
+                                <table class="footer-social" style="max-width: 300px;border-spacing: 0;float: left;">
                                     <tr>
-                                        <td class="link-app" style="border-spacing: 0;">
+                                        <td class="link-app" style="border-spacing: 0;padding-left: 50px !important;">
                                             <a href="#" style="text-decoration:none;">
                                                 <img src="https://i.ibb.co/3fVnh84/group-8.png" alt="group-8" width="88" height="25" data-is360="0" class="" style="border: 0px;background-color: #071C35;padding: 10px;border-radius: 5px;">
                                             </a>
-                                            <a href="" style="text-decoration:none;padding-left: 10px;">
+                                            <a href="#" style="text-decoration:none;padding-left: 10px;">
                                                 <img src="https://i.ibb.co/51prSdx/group-9.png" alt="group-9" width="80" height="25" data-is360="0" class="" style="border: 0px;background-color: #071C35;padding: 10px;border-radius: 5px;">
                                             </a>
                                         </td>
                                     </tr>
                                 </table>
-                                <table class="footer-socialMedia-01" style="max-width: 324px;">
+                                <table class="footer-socialMedia-01" style="max-width: 324px;max-width: 324px;float: right;">
                                     <tr>
-                                        <td class="footer-socialMedia">
-                                            <a href="" style="padding: 0px 0px;text-decoration: none;padding-right: 10px;">
+                                        <td class="footer-socialMedia" style="padding-left: 55px;padding-right: 19px;">
+                                            <a href="#" style="padding: 0px 0px;text-decoration: none;padding-right: 10px;">
                                                 <img src="https://i.ibb.co/QkrCcs7/Facebook.png" alt="Facebook" width="40" height="40" data-is360="0">
                                             </a>
-                                            <a href="" style="padding: 0px 10px;text-decoration: none;">
+                                            <a href="#" style="padding: 0px 10px;text-decoration: none;">
                                                 <img src="https://i.ibb.co/P4vLzS3/Twitter.png" alt="Twitter" width="42" height="40" data-is360="0">
                                             </a>
-                                            <a href="" style="padding: 0px 10px;text-decoration: none;">
+                                            <a href="#" style="padding: 0px 10px;text-decoration: none;">
                                                 <img src="https://i.ibb.co/KF6LhD8/LinkedIn.png" alt="LinkedIn" width="40" height="40" data-is360="0">
                                             </a>
-                                            <a href="" style="padding: 0px 10px;text-decoration: none;">
+                                            <a href="#" style="padding: 0px 10px;text-decoration: none;">
                                                 <img src="https://i.ibb.co/YpB3QDJ/Instagram.png" alt="Instagram" width="40" height="40" data-is360="0">
                                             </a>
                                         </td>
@@ -300,7 +151,7 @@
                     <td>
                         <table>
                             <tr>
-                                <td class="footer-message" style="line-height: 24px;font-size: 14px;">
+                                <td class="footer-message" style="line-height: 24px;font-size: 14px;padding-left: 50px;">
                                     <p>
                                         Messages from Roqqu, including our Customer Experience team, will always come from a help@roqqu.com email address. 
                                         We will never ask you for account information like your password or answers to security questions.
@@ -308,7 +159,7 @@
                                     <p>
                                         27a Road 11, Ikota Villa Estate, Lekki-Epe Expressway, Lagos
                                     </p>
-                                    <a href="" style="color: black;font-size: 15px;">Unsubscribe</a>
+                                    <a href="#" style="color: black;font-size: 15px;">Unsubscribe</a>
                                 </td>
                             </tr>
                         </table>
@@ -317,43 +168,9 @@
 
 
             </tr>
-            
-            <!-- <p>
-                +2348166106863, +2348135718084
-            </p> -->
+
 
                     </table>
-
-
-        <!-- <table border="0" height="100%" style="height:100%;margin:0 auto;color: black;padding:0;width:100%;max-width: 720px;border-spacing: 0;font-family: sans-serif;">
-
-            <td class="x_footer-social-flex">
-                <table style="width:300px; border-spacing:0; vertical-align:bottom; height:10%; margin-top:10px">
-                    <tbody>
-                        <tr>
-                            <td style="padding:0px 0px; border-spacing:0">
-                                <img data-imagetype="External" src="https://i.ibb.co/3fVnh84/group-8.png" alt="group-8" width="80" height="25" data-is360="0"> 
-                                <img data-imagetype="External" src="https://i.ibb.co/51prSdx/group-9.png" alt="group-9" width="80" height="25" data-is360="0" class=""> 
-                            </td>
-                        </tr>
-                        </tbody>
-                        </table>
-                            <table class="x_footer-socialMedia" style="width:340px">
-                                <tbody>
-                                <tr>
-                                <td class="x_footer-socialMedia-01" style="padding-left:0px">
-                                    <img data-imagetype="External" src="https://i.ibb.co/QkrCcs7/Facebook.png" alt="Facebook" width="40" height="40" data-is360="0"> 
-                                    <img data-imagetype="External" src="https://i.ibb.co/P4vLzS3/Twitter.png" alt="Twitter" width="42" height="40" data-is360="0"> 
-                                    <img data-imagetype="External" src="https://i.ibb.co/KF6LhD8/LinkedIn.png" alt="LinkedIn" width="40" height="40" data-is360="0"> 
-                                    <img data-imagetype="External" src="https://i.ibb.co/YpB3QDJ/Instagram.png" alt="Instagram" width="40" height="40" data-is360="0"> 
-                                </td>
-                                </tr>
-                            </tbody>
-                            </table>
-                            </td>
-        </table> -->
         </center>
-    </body>
-
-
+</body>
 </html>

@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <style>
+      .colored {
+        font-size:10px
+      }
+      #body {
+        font-size: 14px;
+      }
+      @media screen and (min-width: 500px) {
+        .colored {
+          font-size:50px
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id='body'>
+      <p>Hi Pierce,</p>
+      <p class='colored'>
+        This text is blue if the window width is
+        below 500px and red otherwise.
+      </p>
+      <p>Jerry</p>
+    </div>
+  </body>
+</html>
